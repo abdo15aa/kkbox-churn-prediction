@@ -1,0 +1,19 @@
+# Core Data Science
+numpy>=1.26.4,<2.1.0
+pandas>=2.2.1
+
+# Machine Learning & Imbalanced Data
+scikit-learn>=1.4.2
+lightgbm>=4.3.0
+imbalanced-learn>=0.12.2
+
+# Visualization (EDA & Dashboard prep)
+matplotlib>=3.8.4
+seaborn>=0.13.2
+
+# Quality & Testing
+pytest>=8.1.1
+ruff>=0.4.1
+
+# Utilities
+tqdm>=4.66.2

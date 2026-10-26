@@ -1,0 +1,35 @@
+# Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Data and SQLite databases
+data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Models artifacts
+models/*.pkl
+models/*.joblib
+models/*.txt
+models/*.model
+!models/.gitkeep
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.docx
+~$*.docx
+*.tmp
