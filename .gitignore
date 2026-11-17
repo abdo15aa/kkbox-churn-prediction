@@ -1,23 +1,31 @@
-# Environments
+# ── Python Environments ───────────────────────────────────────────────────────
 venv/
 .venv/
+.venv_test/
 env/
 ENV/
 
-# Data and SQLite databases
-data/
-*.db
-*.sqlite
-*.sqlite3
+# ── Data Files (too large for git; restore by running pipeline) ───────────────
+data/raw/
+data/features/
+data/processed/
+data/*.db*
+data/*.sqlite*
+data/*.csv
 
-# Models artifacts
+# ── Generated Model Artifacts (restore by running training pipeline) ──────────
 models/*.pkl
 models/*.joblib
 models/*.txt
 models/*.model
 !models/.gitkeep
 
-# Python bytecode & cache
+# ── Generated Output Artifacts (restore by running production scoring) ─────────
+outputs/*.csv
+outputs/*.json
+!outputs/.gitkeep
+
+# ── Python Bytecode & Cache ───────────────────────────────────────────────────
 __pycache__/
 *.py[cod]
 *$py.class
@@ -25,11 +33,20 @@ __pycache__/
 .ruff_cache/
 .mypy_cache/
 
-# IDE & OS files
+# ── IDE & OS Files ────────────────────────────────────────────────────────────
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
+
+# ── Office Temporary Files ────────────────────────────────────────────────────
 *.docx
 ~$*.docx
 *.tmp
+
+# ── Jupyter Notebooks Checkpoints ────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# ── Docker ────────────────────────────────────────────────────────────────────
+.dockerignore

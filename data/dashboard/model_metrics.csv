@@ -1,0 +1,19 @@
+model,split,metric,value
+XGBoost,Cohort B (OOT),threshold,0.64
+XGBoost,Cohort B (OOT),roc_auc,0.901699
+XGBoost,Cohort B (OOT),pr_auc,0.663348
+XGBoost,Cohort B (OOT),f1,0.589043
+XGBoost,Cohort B (OOT),precision,0.77633
+XGBoost,Cohort B (OOT),recall,0.474558
+LightGBM,Cohort B (OOT),threshold,0.39
+LightGBM,Cohort B (OOT),roc_auc,0.899795
+LightGBM,Cohort B (OOT),pr_auc,0.617272
+LightGBM,Cohort B (OOT),f1,0.603913
+LightGBM,Cohort B (OOT),precision,0.709129
+LightGBM,Cohort B (OOT),recall,0.525885
+Logistic Regression,Cohort B (Default 0.50),threshold,0.5
+Logistic Regression,Cohort B (Default 0.50),roc_auc,0.816504
+Logistic Regression,Cohort B (Default 0.50),pr_auc,0.510823
+Logistic Regression,Cohort B (Default 0.50),f1,0.409794
+Logistic Regression,Cohort B (Default 0.50),precision,0.753555
+Logistic Regression,Cohort B (Default 0.50),recall,0.281416

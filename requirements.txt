@@ -1,19 +1,27 @@
-# Core Data Science
+# ── Core Data Science ──────────────────────────────────────────────────────────
 numpy>=1.26.4,<2.1.0
 pandas>=2.2.1
 
-# Machine Learning & Imbalanced Data
+# ── Machine Learning & Gradient Boosting ──────────────────────────────────────
 scikit-learn>=1.4.2
 lightgbm>=4.3.0
+xgboost>=2.0.3
 imbalanced-learn>=0.12.2
 
-# Visualization (EDA & Dashboard prep)
+# ── Model Persistence ─────────────────────────────────────────────────────────
+# joblib is bundled with scikit-learn but pinned here for explicit reproducibility
+joblib>=1.4.0
+
+# ── Model Interpretability ────────────────────────────────────────────────────
+shap>=0.45.0
+
+# ── Visualization (EDA & Report generation) ────────────────────────────────────
 matplotlib>=3.8.4
 seaborn>=0.13.2
 
-# Quality & Testing
+# ── Quality & Testing ─────────────────────────────────────────────────────────
 pytest>=8.1.1
 ruff>=0.4.1
 
-# Utilities
+# ── Utilities ─────────────────────────────────────────────────────────────────
 tqdm>=4.66.2

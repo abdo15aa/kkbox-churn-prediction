@@ -1,0 +1,283 @@
+{
+  "stage": 5,
+  "run_timestamp": "2026-11-05T10:00:24.024131Z",
+  "evaluated_model": "xgboost_churn_model",
+  "evaluation_dataset": "cohort_b_features.csv",
+  "population_total": 50000,
+  "actual_churners_total": 4520,
+  "base_churn_rate": 0.0904,
+  "percentile_gains_table": [
+    {
+      "percentile_pct": 1.0,
+      "customers_targeted": 500,
+      "churners_captured": 487,
+      "non_churners_contacted": 13,
+      "precision_hit_rate": 0.974,
+      "recall_coverage": 0.1077,
+      "lift": 10.77,
+      "min_score_threshold": 0.9967
+    },
+    {
+      "percentile_pct": 2.0,
+      "customers_targeted": 1000,
+      "churners_captured": 940,
+      "non_churners_contacted": 60,
+      "precision_hit_rate": 0.94,
+      "recall_coverage": 0.208,
+      "lift": 10.4,
+      "min_score_threshold": 0.9891
+    },
+    {
+      "percentile_pct": 3.0,
+      "customers_targeted": 1500,
+      "churners_captured": 1360,
+      "non_churners_contacted": 140,
+      "precision_hit_rate": 0.9067,
+      "recall_coverage": 0.3009,
+      "lift": 10.03,
+      "min_score_threshold": 0.9683
+    },
+    {
+      "percentile_pct": 5.0,
+      "customers_targeted": 2500,
+      "churners_captured": 2016,
+      "non_churners_contacted": 484,
+      "precision_hit_rate": 0.8064,
+      "recall_coverage": 0.446,
+      "lift": 8.92,
+      "min_score_threshold": 0.7528
+    },
+    {
+      "percentile_pct": 10.0,
+      "customers_targeted": 5000,
+      "churners_captured": 2825,
+      "non_churners_contacted": 2175,
+      "precision_hit_rate": 0.565,
+      "recall_coverage": 0.625,
+      "lift": 6.25,
+      "min_score_threshold": 0.1293
+    },
+    {
+      "percentile_pct": 15.0,
+      "customers_targeted": 7500,
+      "churners_captured": 3302,
+      "non_churners_contacted": 4198,
+      "precision_hit_rate": 0.4403,
+      "recall_coverage": 0.7305,
+      "lift": 4.87,
+      "min_score_threshold": 0.0422
+    },
+    {
+      "percentile_pct": 20.0,
+      "customers_targeted": 10000,
+      "churners_captured": 3621,
+      "non_churners_contacted": 6379,
+      "precision_hit_rate": 0.3621,
+      "recall_coverage": 0.8011,
+      "lift": 4.01,
+      "min_score_threshold": 0.0181
+    },
+    {
+      "percentile_pct": 25.0,
+      "customers_targeted": 12500,
+      "churners_captured": 3794,
+      "non_churners_contacted": 8706,
+      "precision_hit_rate": 0.3035,
+      "recall_coverage": 0.8394,
+      "lift": 3.36,
+      "min_score_threshold": 0.0097
+    },
+    {
+      "percentile_pct": 30.0,
+      "customers_targeted": 15000,
+      "churners_captured": 3931,
+      "non_churners_contacted": 11069,
+      "precision_hit_rate": 0.2621,
+      "recall_coverage": 0.8697,
+      "lift": 2.9,
+      "min_score_threshold": 0.0054
+    },
+    {
+      "percentile_pct": 40.0,
+      "customers_targeted": 20000,
+      "churners_captured": 4097,
+      "non_churners_contacted": 15903,
+      "precision_hit_rate": 0.2049,
+      "recall_coverage": 0.9064,
+      "lift": 2.27,
+      "min_score_threshold": 0.0022
+    },
+    {
+      "percentile_pct": 50.0,
+      "customers_targeted": 25000,
+      "churners_captured": 4253,
+      "non_churners_contacted": 20747,
+      "precision_hit_rate": 0.1701,
+      "recall_coverage": 0.9409,
+      "lift": 1.88,
+      "min_score_threshold": 0.0009
+    },
+    {
+      "percentile_pct": 100.0,
+      "customers_targeted": 50000,
+      "churners_captured": 4520,
+      "non_churners_contacted": 45480,
+      "precision_hit_rate": 0.0904,
+      "recall_coverage": 1.0,
+      "lift": 1.0,
+      "min_score_threshold": 0.0
+    }
+  ],
+  "campaign_simulations": {
+    "Scenario A: Automated Digital Voucher (Low Cost / Scaled Outreach)": [
+      {
+        "target_tier": "Top 5%",
+        "customers_contacted": 2500,
+        "churners_in_pool": 2016,
+        "precision_hit_rate": 0.8064,
+        "churn_coverage": 0.446,
+        "expected_retained_users": 302.4,
+        "gross_revenue_saved_twd": 136080.0,
+        "campaign_cost_twd": 37500,
+        "net_profit_twd": 98580.0,
+        "roi_pct": 262.9,
+        "break_even_retention_rate": 0.0413
+      },
+      {
+        "target_tier": "Top 10%",
+        "customers_contacted": 5000,
+        "churners_in_pool": 2825,
+        "precision_hit_rate": 0.565,
+        "churn_coverage": 0.625,
+        "expected_retained_users": 423.8,
+        "gross_revenue_saved_twd": 190688.0,
+        "campaign_cost_twd": 75000,
+        "net_profit_twd": 115688.0,
+        "roi_pct": 154.2,
+        "break_even_retention_rate": 0.059
+      },
+      {
+        "target_tier": "Top 20%",
+        "customers_contacted": 10000,
+        "churners_in_pool": 3621,
+        "precision_hit_rate": 0.3621,
+        "churn_coverage": 0.8011,
+        "expected_retained_users": 543.1,
+        "gross_revenue_saved_twd": 244418.0,
+        "campaign_cost_twd": 150000,
+        "net_profit_twd": 94418.0,
+        "roi_pct": 62.9,
+        "break_even_retention_rate": 0.0921
+      }
+    ],
+    "Scenario B: Personalized Customer Care Outreach (High Touch)": [
+      {
+        "target_tier": "Top 5%",
+        "customers_contacted": 2500,
+        "churners_in_pool": 2016,
+        "precision_hit_rate": 0.8064,
+        "churn_coverage": 0.446,
+        "expected_retained_users": 504.0,
+        "gross_revenue_saved_twd": 453600.0,
+        "campaign_cost_twd": 150000,
+        "net_profit_twd": 303600.0,
+        "roi_pct": 202.4,
+        "break_even_retention_rate": 0.0827
+      },
+      {
+        "target_tier": "Top 10%",
+        "customers_contacted": 5000,
+        "churners_in_pool": 2825,
+        "precision_hit_rate": 0.565,
+        "churn_coverage": 0.625,
+        "expected_retained_users": 706.2,
+        "gross_revenue_saved_twd": 635625.0,
+        "campaign_cost_twd": 300000,
+        "net_profit_twd": 335625.0,
+        "roi_pct": 111.9,
+        "break_even_retention_rate": 0.118
+      },
+      {
+        "target_tier": "Top 20%",
+        "customers_contacted": 10000,
+        "churners_in_pool": 3621,
+        "precision_hit_rate": 0.3621,
+        "churn_coverage": 0.8011,
+        "expected_retained_users": 905.2,
+        "gross_revenue_saved_twd": 814725.0,
+        "campaign_cost_twd": 600000,
+        "net_profit_twd": 214725.0,
+        "roi_pct": 35.8,
+        "break_even_retention_rate": 0.1841
+      }
+    ],
+    "Scenario C: Conservative Baseline (Risk-Averse)": [
+      {
+        "target_tier": "Top 5%",
+        "customers_contacted": 2500,
+        "churners_in_pool": 2016,
+        "precision_hit_rate": 0.8064,
+        "churn_coverage": 0.446,
+        "expected_retained_users": 201.6,
+        "gross_revenue_saved_twd": 90720.0,
+        "campaign_cost_twd": 50000,
+        "net_profit_twd": 40720.0,
+        "roi_pct": 81.4,
+        "break_even_retention_rate": 0.0551
+      },
+      {
+        "target_tier": "Top 10%",
+        "customers_contacted": 5000,
+        "churners_in_pool": 2825,
+        "precision_hit_rate": 0.565,
+        "churn_coverage": 0.625,
+        "expected_retained_users": 282.5,
+        "gross_revenue_saved_twd": 127125.0,
+        "campaign_cost_twd": 100000,
+        "net_profit_twd": 27125.0,
+        "roi_pct": 27.1,
+        "break_even_retention_rate": 0.0787
+      },
+      {
+        "target_tier": "Top 20%",
+        "customers_contacted": 10000,
+        "churners_in_pool": 3621,
+        "precision_hit_rate": 0.3621,
+        "churn_coverage": 0.8011,
+        "expected_retained_users": 362.1,
+        "gross_revenue_saved_twd": 162945.0,
+        "campaign_cost_twd": 200000,
+        "net_profit_twd": -37055.0,
+        "roi_pct": -18.5,
+        "break_even_retention_rate": 0.1227
+      }
+    ]
+  },
+  "simulation_assumptions": {
+    "Scenario A: Automated Digital Voucher (Low Cost / Scaled Outreach)": {
+      "cost_per_contact_twd": 15,
+      "retained_clv_value_twd": 450,
+      "success_rate": 0.15,
+      "description": "Automated in-app retention pop-up and email offer for subscribers at risk."
+    },
+    "Scenario B: Personalized Customer Care Outreach (High Touch)": {
+      "cost_per_contact_twd": 60,
+      "retained_clv_value_twd": 900,
+      "success_rate": 0.25,
+      "description": "High-touch customer support outreach for high-value subscribers."
+    },
+    "Scenario C: Conservative Baseline (Risk-Averse)": {
+      "cost_per_contact_twd": 20,
+      "retained_clv_value_twd": 450,
+      "success_rate": 0.1,
+      "description": "Conservative planning estimate with lower response rate."
+    }
+  },
+  "stage4_lineage": {
+    "best_iteration": 849,
+    "selected_val_threshold": 0.64,
+    "cohort_b_selected_roc_auc": 0.901699,
+    "cohort_b_selected_pr_auc": 0.663348,
+    "cohort_b_selected_f1": 0.589043
+  }
+}

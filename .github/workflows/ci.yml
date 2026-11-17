@@ -1,0 +1,52 @@
+name: CI — Pipeline Validation
+
+on:
+  push:
+    branches: ["main", "develop"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  validate:
+    name: Code Quality & Pipeline Verification
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: ["3.11"]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install ruff
+
+      - name: Lint with Ruff
+        run: |
+          ruff check src/
+
+      - name: Verify pipeline architecture and components
+        run: |
+          test -f src/06_build_staging_db.py
+          test -f src/07_build_features.py
+          test -f src/08_eda.py
+          test -f src/08_train_baseline.py
+          test -f src/09_train_advanced_models.py
+          test -f src/10_evaluate_oot.py
+          test -f src/10_model_interpretability.py
+          test -f src/11_business_evaluation.py
+          test -f src/12_production_scoring.py
+          test -f app/dashboard.py
+          test -f docker-compose.yml
+          test -f Dockerfile
+          test -f models/model_card.md
+          echo "All core pipeline files verified successfully."

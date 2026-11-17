@@ -1,0 +1,4 @@
+segment,customer_count,pct_of_total,avg_churn_probability,min_probability,max_probability
+High Risk,2500,5.0,0.9515,0.7528,0.9999
+Medium Risk,7500,15.0,0.1508,0.0181,0.7527
+Low Risk,40000,80.0,0.0021,0.0,0.0181
